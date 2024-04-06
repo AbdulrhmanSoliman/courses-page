@@ -1,0 +1,6 @@
+.l-header--nav .link-active {
+  color: var(--main-color);
+}
+.ourCourses .row li.activeTab {
+  background-color: #f5f5f5;
+}

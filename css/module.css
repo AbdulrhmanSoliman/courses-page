@@ -1,0 +1,54 @@
+.main-btn {
+  width: fit-content;
+  min-height: 52px;
+  border-radius: 5px;
+  padding: 15px 40px;
+  background-color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  transition: 0.3s;
+  &:hover {
+    background-color: #2b98d6;
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.pageContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.container {
+  position: relative;
+  padding: 0 15px;
+  width: 80%;
+  margin: auto;
+  max-width: 1440px;
+}
+.sectionTitle {
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--text-color);
+  position: relative;
+  padding-top: 20px;
+  &::before {
+    content: "";
+    width: 94px;
+    height: 7px;
+    position: absolute;
+    background-color: var(--red-color);
+    top: 0;
+    right: 0;
+  }
+}

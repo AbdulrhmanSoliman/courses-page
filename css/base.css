@@ -1,0 +1,31 @@
+:root {
+  --main-color: #184c99;
+  --secondary-color: #23a6f0;
+  --text-color: #252b42;
+  --sec-text-color: #737373;
+  --main-font: "Cairo", sans-serif;
+  --red-color: #ea4142;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--main-font);
+  line-height: 1.5;
+}
+a,
+button {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+   height: 100%; 
+  object-fit: cover;
+}

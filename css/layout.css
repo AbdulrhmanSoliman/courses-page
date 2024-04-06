@@ -1,0 +1,147 @@
+/* Start Header Section */
+.l-header {
+  flex-basis: 100%;
+  padding: 20px 0;
+}
+.l-header > .row {
+  justify-content: flex-start;
+  position: relative;
+  inset-inline-start: 100px;
+  gap: 100px;
+}
+.l-header--logo {
+  color: var(--main-color);
+  font-size: 24px;
+  font-weight: 700;
+}
+.l-header--nav a {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--sec-text-color);
+}
+label[for="toggle"] {
+  display: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .l-header .row {
+    inset-inline-start: 0;
+  }
+  .l-header--nav .row {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .l-header--nav {
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 10;
+    width: 300px;
+    height: 100vh;
+    padding: 100px 20px;
+    transition: 0.3s;
+  }
+  .l-header--nav:has(input:checked) {
+    left: 0;
+  }
+  .l-header--nav a {
+    color: white;
+  }
+  .l-header--nav .link-active {
+    color: black;
+  }
+  label[for="toggle"] {
+    display: block;
+  }
+  .l-header .toggleNav {
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+  }
+  .l-header > .row {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+/* End Header Section */
+/* Start Footer Section */
+.l-footer{
+  background-color: #fafafa;
+  padding: 80px 0  30px;
+  position: relative;
+  z-index: 10;
+}
+.l-footer .container{
+  width: 90%;
+}
+.l-footer .row{
+  align-items: flex-start;
+}
+.footer__contact{
+  flex-basis: 204px;
+}
+.footer__newsletter{
+  flex-basis: 450px;
+}
+.footer__title{
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  + p{
+    color: var(--sec-text-color);
+    margin-bottom:20px ;
+  }
+}
+
+.footer__list{
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--sec-text-color);
+}
+.footer__socials {
+  display: flex;
+  gap: 10px;
+  i{
+    color: var(--secondary-color);
+    font-size: 24px;
+  }
+}
+.footerForm__content{
+  width: 100%;
+  height: 58px;
+  background-color: white;
+  padding: 0 10px;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid #E6E6E6;
+  input{
+    all: unset;
+    width: 100%;
+    height: 100%;
+  }
+  button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+  }
+}
+.l-footer svg{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.copyright{
+  text-align: center;
+  margin-top: 130px;
+  color: var(--sec-text-color);
+  font-size: 15px;
+}
+/* End Footer Section */
